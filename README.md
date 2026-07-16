@@ -54,7 +54,9 @@ npm install
 ## ▶️ Uso
 Ejecuta el proyecto en tu entorno local:
 
+```
 bash
 npm start
 Accede a la interfaz en:
 http://localhost:3000
+```
