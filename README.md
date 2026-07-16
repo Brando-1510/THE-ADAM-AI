@@ -45,11 +45,12 @@ flowchart TD
 ## ⚙️ Instalación
 Clona el repositorio y configura el entorno:
 
+```
 bash
 git clone https://github.com/tuusuario/ADAM.git
 cd ADAM
 npm install
-
+```
 
 ## ▶️ Uso
 Ejecuta el proyecto en tu entorno local:
