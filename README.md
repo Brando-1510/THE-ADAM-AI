@@ -1,6 +1,6 @@
 <div align="center">
 
-# ADAM
+# The ADAM project
 
 ### Asistente inteligente modular para memoria, automatización, acciones y control técnico
 
@@ -33,7 +33,7 @@
 
 El proyecto inició como una idea experimental de asistente avanzado y actualmente se encuentra en una fase temprana de desarrollo, con algunos módulos trabajados a nivel de código y una arquitectura pensada para crecer progresivamente.
 
-ADAM no debe entenderse todavía como un producto terminado, sino como una base técnica en evolución para construir un asistente capaz de **recordar, interpretar, ejecutar y aprender de forma controlada**.
+ADAM no debe entenderse todavía como un producto terminado, sino como una base técnica en evolución para construir un asistente capaz de **recordar, interpretar, ejecutar y aprender de forma autónoma y controlada**.
 
 ---
 
