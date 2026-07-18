@@ -1,19 +1,57 @@
-# A.D.A.M 
+<div align="center">
+
+# ADAM
+
+### Asistente inteligente modular para memoria, automatización, acciones y control técnico
+
+<p>
+  <img src="https://img.shields.io/badge/HACKATHON%20NICARAGUA-2026-0B7A3B?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/CATEGOR%C3%8DA-AGROPECUARIO--LIBRE-2E8B57?style=for-the-badge&labelColor=555555" />
+  <img src="https://img.shields.io/badge/ESTADO-MVP%20EN%20DESARROLLO-F2A900?style=for-the-badge&labelColor=555555" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/LICENSE-MIT-0B132B?style=for-the-badge&labelColor=555555" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=111111" />
+  <img src="https://img.shields.io/badge/TypeScript-Ready-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-IA%20Visual-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL%20%2B%20Prisma-Ready-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+</p>
+
+</div>
+
+---
+
+## Descripción general
 
 **ADAM** es un proyecto de asistente inteligente modular diseñado para integrar razonamiento, memoria persistente, automatización, ejecución de acciones y control de dispositivos físicos o digitales.
 
 El proyecto inició como una idea experimental de asistente avanzado y actualmente se encuentra en una fase temprana de desarrollo, con algunos módulos trabajados a nivel de código y una arquitectura pensada para crecer progresivamente.
 
+ADAM no debe entenderse todavía como un producto terminado, sino como una base técnica en evolución para construir un asistente capaz de **recordar, interpretar, ejecutar y aprender de forma controlada**.
+
 ---
 
-## Estado actual del proyecto
+## Estado actual
 
-> **Estado:** En desarrollo temprano  
-> **Tipo:** Asistente inteligente modular  
-> **Enfoque actual:** Núcleo funcional, módulos base, memoria, acciones y control técnico  
-> **Enfoque futuro:** Aprendizaje incremental, razonamiento neurosimbólico, automatización avanzada y despliegue local/edge
-
-Actualmente, ADAM no debe entenderse como un producto terminado ni como un asistente completamente autónomo. Es una base técnica en construcción, pensada para evolucionar por fases.
+| Área | Estado |
+|---|---|
+| Núcleo conceptual | Definido |
+| Módulos base | En desarrollo |
+| Código existente | Parcial |
+| Dashboard | En desarrollo / planificado |
+| Memoria persistente | Diseño definido |
+| Domótica / dispositivos | En fase inicial |
+| IA avanzada | Roadmap futuro |
+| Online learning | No implementado todavía |
+| LoRA / adapters | Futuro |
+| World model | Futuro |
+| Producción enterprise | No aplica todavía |
 
 ---
 
@@ -28,13 +66,13 @@ El objetivo principal de ADAM es construir un ecosistema modular capaz de:
 - Registrar interacciones y resultados.
 - Servir como base para un asistente más avanzado, privado y extensible.
 
-La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno familiar y un entorno técnico controlado.
+La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno técnico controlado.
 
 ---
 
 ## Visión general
 
-ADAM busca convertirse en un asistente inteligente local-first, modular y extensible, capaz de operar en entornos como:
+ADAM busca convertirse en un asistente inteligente **local-first**, modular y extensible, capaz de operar en entornos como:
 
 - Hogares inteligentes.
 - Oficinas.
@@ -76,70 +114,41 @@ La mayoría de funciones avanzadas forman parte del roadmap futuro, no del estad
 
 ## Principios de diseño
 
-El proyecto se basa en los siguientes principios:
-
-1. **Modularidad**  
-   Cada parte del sistema debe poder desarrollarse, probarse y reemplazarse de forma independiente.
-
-2. **Escalabilidad progresiva**  
-   El sistema debe iniciar simple y crecer por fases, evitando sobrecargar el MVP.
-
-3. **Memoria persistente**  
-   ADAM debe poder registrar interacciones, acciones y preferencias para mejorar el contexto.
-
-4. **Acciones verificables**  
-   Antes de ejecutar acciones importantes, el sistema debe validar intención, contexto y permisos.
-
-5. **Local-first**  
-   Siempre que sea posible, ADAM debe poder ejecutarse de forma local para proteger privacidad y reducir dependencia de la nube.
-
-6. **Extensibilidad**  
-   El sistema debe permitir agregar nuevos módulos, herramientas, dispositivos o servicios sin rehacer la arquitectura completa.
+| Principio | Descripción |
+|---|---|
+| Modularidad | Cada parte del sistema debe poder desarrollarse, probarse y reemplazarse de forma independiente. |
+| Escalabilidad progresiva | El sistema debe iniciar simple y crecer por fases, evitando sobrecargar el MVP. |
+| Memoria persistente | ADAM debe poder registrar interacciones, acciones y preferencias para mejorar el contexto. |
+| Acciones verificables | Antes de ejecutar acciones importantes, el sistema debe validar intención, contexto y permisos. |
+| Local-first | Siempre que sea posible, ADAM debe poder ejecutarse de forma local para proteger privacidad. |
+| Extensibilidad | El sistema debe permitir agregar nuevos módulos, herramientas, dispositivos o servicios sin rehacer toda la arquitectura. |
 
 ---
 
 ## Arquitectura general propuesta
 
-La arquitectura de ADAM está pensada como un conjunto de módulos especializados conectados entre sí.
+```mermaid
+flowchart TD
+    User[Usuario] --> API[Assistant API]
+    API --> Core[Core Engine]
 
-```text
-ADAM
-├── Core Engine
-│   ├── Interpretación de instrucciones
-│   ├── Orquestación de módulos
-│   └── Planificación básica
-│
-├── Memory System
-│   ├── Memoria episódica
-│   ├── Memoria semántica
-│   └── Preferencias del usuario
-│
-├── Device Manager
-│   ├── Registro de dispositivos
-│   ├── Estado de nodos
-│   └── Comandos técnicos
-│
-├── Action Engine
-│   ├── Ejecución de acciones
-│   ├── Validación de permisos
-│   └── Registro de resultados
-│
-├── Retrieval Layer
-│   ├── Búsqueda contextual
-│   ├── Embeddings
-│   └── Recuperación de información
-│
-├── Dashboard
-│   ├── Visualización del sistema
-│   ├── Estado de dispositivos
-│   └── Historial de acciones
-│
-└── Future Modules
-    ├── Online Learning
-    ├── LoRA / Adapters
-    ├── World Model
-    ├── Neurosymbolic Reasoner
-    └── Advanced Automation
+    Core --> Memory[Memory System]
+    Core --> Intent[Intent Parser]
+    Core --> Retrieval[Retrieval Layer]
+    Core --> Action[Action Engine]
+
+    Action --> Device[Device Manager]
+    Action --> Tools[Tooling Layer]
+
+    Device --> MQTT[MQTT / HTTP / WebSocket]
+    Tools --> External[Servicios externos]
+
+    Memory --> DB[(Base de datos)]
+    Retrieval --> Vector[(Vector Store)]
+
+    Core --> Dashboard[Dashboard]
+    Action --> Logs[Action Logs]
+    Logs --> Dashboard
 ```
 
 ---
@@ -148,7 +157,7 @@ ADAM
 
 ### 1. Core Engine
 
-El Core Engine es el núcleo de ADAM.
+El **Core Engine** es el núcleo lógico de ADAM.
 
 Su función es recibir solicitudes, interpretar intención, consultar contexto, decidir qué módulo debe intervenir y coordinar la respuesta o acción.
 
@@ -213,7 +222,7 @@ Estado actual:
 
 ### 3. Device Manager
 
-El Device Manager se encarga de registrar, monitorear y controlar dispositivos.
+El **Device Manager** se encarga de registrar, monitorear y controlar dispositivos.
 
 Puede usarse para:
 
@@ -249,7 +258,7 @@ Estado actual:
 
 ### 4. Action Engine
 
-El Action Engine ejecuta acciones concretas.
+El **Action Engine** ejecuta acciones concretas.
 
 Ejemplos de acciones:
 
@@ -276,7 +285,7 @@ Estado actual:
 
 ### 5. Retrieval Layer
 
-El Retrieval Layer permite buscar información relevante antes de responder o actuar.
+El **Retrieval Layer** permite buscar información relevante antes de responder o actuar.
 
 Su objetivo es evitar que ADAM dependa únicamente del modelo de lenguaje o de reglas estáticas.
 
@@ -330,7 +339,7 @@ Estado actual:
 
 ### 7. World Model
 
-El World Model será una representación interna del estado del entorno.
+El **World Model** será una representación interna del estado del entorno.
 
 Puede incluir:
 
@@ -456,47 +465,17 @@ Construir una versión donde ADAM pueda:
 
 ## Stack técnico recomendado
 
-### Backend
-
-- Python
-- FastAPI
-- Pydantic
-- SQLAlchemy
-
-### Base de datos
-
-Primera etapa:
-
-- SQLite
-
-Etapa posterior:
-
-- Postgres
-- Redis
-
-### Comunicación con dispositivos
-
-- MQTT
-- Mosquitto
-- HTTP
-- WebSocket
-
-### Memoria semántica futura
-
-- FAISS
-- SentenceTransformers
-
-### Frontend
-
-- React
-- Vue
-- Vite
-- Tailwind CSS
-
-### DevOps
-
-- Docker
-- Docker Compose
+| Área | Tecnología |
+|---|---|
+| Backend | Python, FastAPI, Pydantic, SQLAlchemy |
+| Frontend | React, Vue, Vite, Tailwind CSS |
+| Base de datos inicial | SQLite |
+| Base de datos futura | PostgreSQL, Redis |
+| Domótica / IoT | MQTT, Mosquitto, HTTP, WebSocket |
+| Memoria semántica futura | FAISS, SentenceTransformers |
+| DevOps | Docker, Docker Compose |
+| IA visual futura | OpenCV |
+| ORM / datos | Prisma, SQLAlchemy |
 
 ---
 
@@ -555,26 +534,26 @@ adam/
 
 ## Flujo básico del sistema
 
-```text
-Usuario
-  ↓
-Assistant API
-  ↓
-Core Engine
-  ↓
-Memory System
-  ↓
-Intent Parser
-  ↓
-Action Engine
-  ↓
-Device Manager / Tooling Layer
-  ↓
-Resultado
-  ↓
-Log en memoria
-  ↓
-Dashboard
+```mermaid
+sequenceDiagram
+    participant U as Usuario
+    participant A as Assistant API
+    participant C as Core Engine
+    participant M as Memory System
+    participant E as Action Engine
+    participant D as Device Manager
+    participant L as Logs
+
+    U->>A: Envía instrucción
+    A->>C: Procesa solicitud
+    C->>M: Consulta contexto
+    M-->>C: Devuelve memoria relevante
+    C->>E: Propone acción
+    E->>D: Ejecuta comando
+    D-->>E: Resultado
+    E->>L: Registra acción
+    E-->>A: Respuesta final
+    A-->>U: Confirma resultado
 ```
 
 ---
@@ -770,6 +749,22 @@ Devuelve el estado general del sistema.
 
 ## Roadmap
 
+```mermaid
+gantt
+    title Roadmap de ADAM
+    dateFormat  YYYY-MM-DD
+    section Fase 0
+    Base técnica inicial          :active, f0, 2026-07-01, 30d
+    section Fase 1
+    MVP funcional                 :f1, after f0, 45d
+    section Fase 2
+    Memoria contextual            :f2, after f1, 45d
+    section Fase 3
+    Automatización avanzada       :f3, after f2, 60d
+    section Fase 4
+    Inteligencia avanzada         :f4, after f3, 90d
+```
+
 ### Fase 0 — Base técnica
 
 Objetivo: crear una base funcional mínima.
@@ -886,8 +881,6 @@ Objetivos de privacidad:
 ---
 
 ## Métricas de éxito
-
-Algunas métricas útiles para evaluar el avance del proyecto:
 
 | Métrica | Descripción |
 |---|---|
@@ -1110,7 +1103,7 @@ Decisiones recomendadas para mantener el proyecto controlado:
 
 ## Licencia
 
-Este proyecto todavía no tiene una licencia definida.
+Este proyecto todavía no tiene una licencia definitiva.
 
 Opciones recomendadas:
 
@@ -1141,3 +1134,5 @@ Las funciones más avanzadas —como aprendizaje incremental, LoRA, razonamiento
 El objetivo inmediato es claro:
 
 > Construir un asistente local, modular y confiable que pueda recordar, interpretar y actuar dentro de un entorno técnico controlado.
+
+---
