@@ -28,7 +28,7 @@ El objetivo principal de ADAM es construir un ecosistema modular capaz de:
 - Registrar interacciones y resultados.
 - Servir como base para un asistente más avanzado, privado y extensible.
 
-La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno técnico controlado.
+La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno familiar y un entorno técnico controlado.
 
 ---
 
