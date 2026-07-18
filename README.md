@@ -1,4 +1,4 @@
-# ADAM
+# A.D.A.M 
 
 **ADAM** es un proyecto de asistente inteligente modular diseñado para integrar razonamiento, memoria persistente, automatización, ejecución de acciones y control de dispositivos físicos o digitales.
 
