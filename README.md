@@ -6,7 +6,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/PROYECTO%20PERSONAL-2024-0B7A3B?style=for-the-badge&labelColor=555555" />
-  <img src="https://img.shields.io/badge/AGENTE2E8B57?style=for-the-badge&labelColor=555555" />
+  <img src="https://shields.io" />
   <img src="https://img.shields.io/badge/ESTADO-MVP%20EN%20DESARROLLO-F2A900?style=for-the-badge&labelColor=555555" />
 </p>
 
