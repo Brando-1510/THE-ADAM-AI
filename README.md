@@ -44,7 +44,7 @@ ADAM no debe entenderse todavía como un producto terminado, sino como una base 
 | Núcleo conceptual | Definido |
 | Módulos base | En desarrollo |
 | Código existente | Parcial |
-| Dashboard | En desarrollo / planificado |
+| UI interactivo | En desarrollo / planificado |
 | Memoria persistente | Diseño definido |
 | Domótica / dispositivos | En fase inicial |
 | IA avanzada | Roadmap futuro |
@@ -66,7 +66,7 @@ El objetivo principal de ADAM es construir un ecosistema modular capaz de:
 - Registrar interacciones y resultados.
 - Servir como base para un asistente más avanzado, privado y extensible.
 
-La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno técnico controlado.
+La idea central es que ADAM no sea solo un chatbot, sino un sistema capaz de **razonar, recordar y actuar** dentro de un entorno familiar y cercado además de entornos más técnicos de frorma controlada.
 
 ---
 
@@ -92,7 +92,7 @@ ADAM es:
 
 - Un asistente modular.
 - Un núcleo de automatización inteligente.
-- Una plataforma para conectar memoria, acciones y dispositivos.
+- Una plataforma para conectar memoria situacional, acciones y dispositivos.
 - Un proyecto experimental con visión de largo plazo.
 - Una base para construir un sistema tipo asistente técnico local.
 
