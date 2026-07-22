@@ -1,6 +1,6 @@
 <div align="center">
 
-# The ADAM project
+# The ADAM 
 
 ### Asistente inteligente modular especializado en memoria secuencial, automatización, acciones y control técnico
 
